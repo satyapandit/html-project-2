@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+    <title>The New Fastfood</title>
+    <meta http-equiv="cache-control" content="no-cache, no-store,must-revalidate"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            font-family: helvetica, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        div {
+          height: 200px;
+          background-size: cover;
+          position: relative;
+          border-radius: 12px;
+        }
+
+        .first {
+          background: url("https://lh3.googleusercontent.com/0RD9wf-frKHjk-VGDdK0StsJhy52dTUnru2AbQch-yHOw7zbmZLGVhvYZSqjCADJMj9sEVBqTN99QQ4f9AyDwrIeqRES7bJFkniAcJFr21yBhy_9KWYwG774teAk6oexYRNvZ1mIow=w2400");
+        }
+
+        .second {
+          background: url("https://lh3.googleusercontent.com/pgcS0d7h5G6j8eB4dUa3v0UsEMugZVP8Nrk8lYAcGg5r05PypzkBqMI4ECAwQQhXZ3XZiTWLjchiNT8NTiz-gDOHR7PMNXicTf-z-WUDVGke_JhciXVFnVzyEsGSTqUOGH5TUaa2Hw=w2400");
+        }
+
+        .third {
+          background: url("https://lh3.googleusercontent.com/22MsJm3JUtJlB5LzHRZlTkhGU0xZNB0FsHz1RtG_5Y0z80-MBoiqhTPQ1uyrvkL5ms_gKVg_9uV4-cyLcNvfkG9ISiN0saZvnLKn_hizn51bLY1GAKbWxKb-VUOJ4iFbnjDAnk0H2g=w2400");
+        }
+
+
+        p {
+          color: rgba(255,255,255,1);
+          background-color: rgba(0,0,0,1);
+          background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+          background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+          background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+          background: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+          padding: 18px;
+          text-align: justify;
+          line-height: 28px;
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          text-height: 30px;
+        }
+
+        .price {
+          float: right;
+        }
+        h1 {
+          font-family: 'Baloo Bhaina', cursive;
+          font-size: 40px;
+          text-align: center;
+        }
+        h2 {
+          text-align: center;
+          margin: -50px 0 70px 0;
+        }
+        small {
+          opacity: 0;
+        }
+        .show-description {
+          height: 150px;
+        }
+        .show-description small {
+          opacity: 1;
+        }
+
+        @media (max-width: 500px) {
+          h1 {
+            font-size: 50px;
+            margin-top: 20px;
+            line-height: 50px;
+          }
+          h2 {
+            font-size: 20px;
+            margin: 20px 0 30px 0;
+          }
+          div {
+            margin: 20px 12px 0 12px;
+          }
+          p {
+            font-size: 20px;
+            line-height: 25px;
+          }
+          small {
+            font-size: 16px;
+          }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>The Fastfood</h1>
+    <h2>Fresh & whole food recipe</h2>
+
+    <div class="first">
+    <p>
+      Indian Style Masala Pasta <span class="price">$2</span><br>
+      <small>
+        one pot Indian Style Masala Pasta is made of combination of simple flavors like the Garlic Parmesan,
+        Lemon Garlic, etc
+      </small>
+    </p>
+    </div>
+
+
+    <div class="second">
+    <p>
+      Vanilla Panna Cotta<span class="price">$1.5</span><br>
+      <small>
+        Vanilla Panna Cotta with Strawberry Sauce”, an amazing Italian dessert,
+         which translates to cooked cream.
+        It is a slightly warmed and flavored cream set into shape using gelatin / agar agar.
+      </small>
+    </p>
+    </div>
+
+
+    <div class="third">
+    <p>
+      Paneer Biryani<span class="price"><$3</span><br>
+      <small>Paneer Biryani”, a super delicious Indian rice entree.
+         Perfect to make for lunch any day of the week
+      </small>
+    </p>
+    </div>
+    <script>
+      $('div').on('click',function() {
+        $(this).toggleClass('show-description');
+      });
+    </script>
+</body>
